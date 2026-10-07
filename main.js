@@ -3,21 +3,26 @@
    Edit these values to customise the site for a client.
    ========================================================= */
 const CONFIG = {
-  whatsapp: '971500000000',          // international format, digits only
+  whatsapp: '910000000000',          // international format, digits only
   email: 'hello@carking.cars',
 };
 
 // Add `video: 'assets/car-1.mp4'` to any car to play a video over its photo.
 const CARS = [
-  { brand: 'Ferrari',       model: 'F8 Tributo',          cat: 'super', tag: 'Rosso Corsa · 2023', img: 'photo-1592198084033-aade902d1aae', specs: [['720', 'HP'], ['2.9s', '0–100'], ['340', 'km/h']] },
-  { brand: 'McLaren',       model: '720S',                cat: 'super', tag: 'Silica White · 2022', img: 'photo-1542362567-b07e54358753', specs: [['720', 'HP'], ['2.9s', '0–100'], ['341', 'km/h']] },
-  { brand: 'Lamborghini',   model: 'Aventador S',         cat: 'super', tag: 'Blu Nethuns · 2022', img: 'photo-1621135802920-133df287f89c', specs: [['740', 'HP'], ['2.9s', '0–100'], ['350', 'km/h']] },
-  { brand: 'Porsche',       model: '911 GT3',             cat: 'track', tag: 'Crayon · 2023',       img: 'photo-1614162692292-7ac56d7f7f1e', specs: [['500', 'HP'], ['3.4s', '0–100'], ['318', 'km/h']] },
-  { brand: 'Mercedes-AMG',  model: 'GT R',                cat: 'track', tag: 'Selenite Grey · 2021', img: 'photo-1618843479313-40f8afb4b4d8', specs: [['585', 'HP'], ['3.6s', '0–100'], ['318', 'km/h']] },
-  { brand: 'Porsche',       model: 'Panamera Turbo S',    cat: 'gt',    tag: 'Jet Black · 2023',    img: 'photo-1503376780353-7e6692767b70', specs: [['630', 'HP'], ['3.1s', '0–100'], ['315', 'km/h']] },
-  { brand: 'Lamborghini',   model: 'Huracán EVO',         cat: 'super', tag: 'Giallo Inti · 2022',  img: 'photo-1511919884226-fd3cad34687c', specs: [['640', 'HP'], ['2.9s', '0–100'], ['325', 'km/h']] },
-  { brand: 'BMW M',         model: 'M4 Competition',      cat: 'track', tag: 'Mineral Grey · 2021', img: 'photo-1580273916550-e323be2ae537', specs: [['450', 'HP'], ['4.0s', '0–100'], ['280', 'km/h']] },
-  { brand: 'Audi Sport',    model: 'RS 6 Avant',          cat: 'gt',    tag: 'Mythos Black · 2022', img: 'photo-1606664515524-ed2f786a0bd6', specs: [['605', 'HP'], ['3.7s', '0–100'], ['305', 'km/h']] },
+  { brand: 'Land Rover',    model: 'Range Rover',      cat: 'luxury', tag: 'Belgravia Green · 2024', img: 'rangerover', specs: [['3.0L', 'Engine'], ['394', 'HP'], ['5', 'Seats']] },
+  { brand: 'BMW',           model: 'X5 xDrive40i',     cat: 'luxury', tag: 'Phytonic Blue · 2023',   img: 'x5',         specs: [['3.0L', 'Engine'], ['381', 'HP'], ['5', 'Seats']] },
+  { brand: 'Land Rover',    model: 'Defender 110',     cat: 'luxury', tag: 'Fuji White · 2023',      img: 'defender',   specs: [['3.0L', 'Engine'], ['296', 'HP'], ['5', 'Seats']] },
+  { brand: 'Audi',          model: 'Q7',               cat: 'luxury', tag: 'Navarra Blue · 2023',    img: 'q7',         specs: [['3.0L', 'Engine'], ['340', 'HP'], ['7', 'Seats']] },
+  { brand: 'BMW',           model: '330Li M Sport',    cat: 'luxury', tag: 'Carbon Black · 2023',    img: 'bmw3',       specs: [['2.0L', 'Engine'], ['258', 'HP'], ['5', 'Seats']] },
+  { brand: 'Mercedes-Benz', model: 'GLE 300d',         cat: 'luxury', tag: 'Cavansite Blue · 2022',  img: 'gle',        specs: [['2.0L', 'Engine'], ['269', 'HP'], ['5', 'Seats']] },
+  { brand: 'Mahindra',      model: 'Thar LX',          cat: 'suv',    tag: 'Red Rage · 2023',        img: 'thar',       specs: [['2.2L', 'Engine'], ['130', 'HP'], ['4', 'Seats']] },
+  { brand: 'Mahindra',      model: 'XUV700 AX7',       cat: 'suv',    tag: 'Midnight Black · 2023',  img: 'xuv700',     specs: [['2.2L', 'Engine'], ['185', 'HP'], ['7', 'Seats']] },
+  { brand: 'Toyota',        model: 'Fortuner Legender', cat: 'suv',   tag: 'Attitude Black · 2023',  img: 'fortuner',   specs: [['2.8L', 'Engine'], ['201', 'HP'], ['7', 'Seats']] },
+  { brand: 'Mahindra',      model: 'Scorpio-N Z8L',    cat: 'suv',    tag: 'Napoli Black · 2023',    img: 'scorpio',    specs: [['2.2L', 'Engine'], ['175', 'HP'], ['7', 'Seats']] },
+  { brand: 'Tata',          model: 'Safari Dark',      cat: 'suv',    tag: 'Oberon Black · 2023',    img: 'safari',     specs: [['2.0L', 'Engine'], ['168', 'HP'], ['7', 'Seats']] },
+  { brand: 'Hyundai',       model: 'Creta SX(O)',      cat: 'family', tag: 'Titan Grey · 2022',      img: 'creta',      specs: [['1.5L', 'Engine'], ['158', 'HP'], ['5', 'Seats']] },
+  { brand: 'Toyota',        model: 'Innova Hycross',   cat: 'family', tag: 'Platinum White · 2024',  img: 'hycross',    specs: [['2.0L', 'Hybrid'], ['184', 'HP'], ['7', 'Seats']] },
+  { brand: 'Kia',           model: 'Seltos GTX+',      cat: 'family', tag: 'Glacier White · 2024',   img: 'seltos',     specs: [['1.5L', 'Engine'], ['158', 'HP'], ['5', 'Seats']] },
 ];
 
 /* ========================================================= */
@@ -25,7 +30,7 @@ const CARS = [
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const isTouch = matchMedia('(hover: none)').matches;
-const imgUrl = (id, w = 1600) => `https://images.unsplash.com/${id}?w=${w}&q=80&auto=format&fit=crop`;
+const imgUrl = (name) => `assets/cars/${name}.jpg`;
 const waLink = (text) => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`;
 
 $('#year').textContent = new Date().getFullYear();
@@ -70,7 +75,7 @@ const select = $('#carSelect');
 grid.innerHTML = CARS.map((c, i) => `
   <article class="car" data-cat="${c.cat}" data-index="${i}">
     <div class="car__media" data-cursor="view" data-open="${i}">
-      <img src="${imgUrl(c.img, 1800)}" alt="${c.brand} ${c.model}" loading="lazy" />
+      <img src="${imgUrl(c.img)}" alt="${c.brand} ${c.model}" loading="lazy" />
       ${c.video ? `<video muted playsinline loop preload="none" data-src="${c.video}"></video>` : ''}
       <span class="car__tag">${c.tag}</span>
       <span class="car__num">${String(i + 1).padStart(2, '0')}</span>
@@ -93,7 +98,6 @@ grid.innerHTML = CARS.map((c, i) => `
   </article>`).join('');
 
 CARS.forEach(c => select.add(new Option(`${c.brand} ${c.model}`, `${c.brand} ${c.model}`)));
-select.add(new Option('Bugatti Chiron', 'Bugatti Chiron'));
 select.add(new Option('Something not listed', 'A car not listed'));
 
 // Layout rhythm: two half-width cards, then one wide — recomputed after filtering.
@@ -320,10 +324,10 @@ grid.addEventListener('click', e => {
   const t = e.target.closest('[data-open]');
   if (!t) return;
   const c = CARS[+t.dataset.open];
-  openModal(`${c.brand} ${c.model}`, c.brand, imgUrl(c.img, 1200));
+  openModal(`${c.brand} ${c.model}`, c.brand, imgUrl(c.img));
 });
 $$('[data-enquire]').forEach(b => b.addEventListener('click', () => {
-  openModal(b.dataset.enquire, 'Bugatti', $('.signature__frame img').src);
+  openModal(b.dataset.enquire, 'Land Rover', $('.signature__frame img').src);
 }));
 $$('[data-close]', modal).forEach(b => b.addEventListener('click', closeModal));
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
