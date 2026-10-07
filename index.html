@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>CARKING — Exceptional Automobiles</title>
+  <meta name="description" content="CARKING — a private collection of the world's most extraordinary automobiles. By appointment only." />
+  <meta name="theme-color" content="#070707" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="is-loading">
+
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__mark">
+      <span>C</span><span>A</span><span>R</span><span>K</span><span>I</span><span>N</span><span>G</span>
+    </div>
+    <div class="loader__bar"><i></i></div>
+    <div class="loader__meta">Exceptional Automobiles · Est. 2026</div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor" aria-hidden="true"><span class="cursor__label">View</span></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="#top" class="nav__logo" aria-label="CARKING home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 24 5 9l7 6 4-9 4 9 7-6 2 15Z" fill="currentColor"/><rect x="3" y="26" width="26" height="3" fill="currentColor"/></svg>
+      <span>CARKING</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#collection">Collection</a>
+      <a href="#signature">Signature</a>
+      <a href="#atelier">Atelier</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav__cta" href="#contact" data-magnetic><span>Private Viewing</span></a>
+    <button class="nav__burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <div class="menu" aria-hidden="true">
+    <nav>
+      <a href="#collection"><em>01</em>Collection</a>
+      <a href="#signature"><em>02</em>Signature</a>
+      <a href="#atelier"><em>03</em>Atelier</a>
+      <a href="#contact"><em>04</em>Contact</a>
+    </nav>
+    <div class="menu__foot">
+      <a href="#" data-wa>WhatsApp</a>
+      <span>By appointment only</span>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__media">
+        <picture>
+          <source media="(orientation: portrait) and (max-width: 900px)" srcset="assets/hero-portrait.jpg" />
+          <img class="hero__poster" src="assets/hero-landscape.jpg" alt="" />
+        </picture>
+        <!-- Header video: drop files into /assets with these names -->
+        <video class="hero__video" muted playsinline loop autoplay preload="auto"
+               data-landscape="assets/hero-landscape.mp4"
+               data-portrait="assets/hero-portrait.mp4"></video>
+      </div>
+      <div class="hero__shade"></div>
+      <div class="grain" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="eyebrow reveal-up" style="--d:.1s">A Private Collection</p>
+        <h1 class="hero__title">
+          <span class="line"><span>Beyond</span></span>
+          <span class="line"><span><em>Machine.</em></span></span>
+        </h1>
+        <p class="hero__sub reveal-up" style="--d:.5s">The world's most extraordinary automobiles — curated, inspected and delivered with absolute discretion.</p>
+        <div class="hero__actions reveal-up" style="--d:.65s">
+          <a href="#collection" class="btn btn--gold" data-magnetic><span>Explore the Collection</span></a>
+          <a href="#" class="btn btn--ghost" data-wa data-magnetic>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__foot">
+        <span class="hero__coords">25.2048° N — 55.2708° E</span>
+        <a href="#intro" class="hero__scroll" aria-label="Scroll"><span>Scroll</span><i></i></a>
+        <span class="hero__count">Collection <b>No. 07</b></span>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Hypercars</span><i>✦</i><span>Grand Tourers</span><i>✦</i><span>Collector Icons</span><i>✦</i><span>Bespoke Commissions</span><i>✦</i>
+        <span>Hypercars</span><i>✦</i><span>Grand Tourers</span><i>✦</i><span>Collector Icons</span><i>✦</i><span>Bespoke Commissions</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- INTRO -->
+    <section class="intro" id="intro">
+      <p class="eyebrow reveal">The House</p>
+      <p class="intro__text" data-words>
+        We do not sell cars. We place masterpieces of engineering with the few who understand them — each one hand-selected, flawlessly kept, and handed over in person.
+      </p>
+      <div class="intro__stats">
+        <div class="stat reveal"><b data-count="240">0</b><span>Automobiles placed</span></div>
+        <div class="stat reveal" style="--d:.1s"><b data-count="31">0</b><span>Countries delivered</span></div>
+        <div class="stat reveal" style="--d:.2s"><b data-count="100" data-suffix="%">0</b><span>Provenance verified</span></div>
+      </div>
+    </section>
+
+    <!-- COLLECTION -->
+    <section class="collection" id="collection">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow reveal">The Collection</p>
+          <h2 class="title reveal">Currently <em>in residence</em></h2>
+        </div>
+        <div class="filters reveal" role="tablist">
+          <button class="is-active" data-filter="all">All</button>
+          <button data-filter="super">Supercar</button>
+          <button data-filter="gt">Grand Tourer</button>
+          <button data-filter="track">Track</button>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <!-- SIGNATURE -->
+    <section class="signature" id="signature">
+      <div class="signature__sticky">
+        <div class="signature__frame">
+          <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=2400&q=80&auto=format&fit=crop" alt="Bugatti Chiron front view at night" />
+          <div class="signature__shade"></div>
+        </div>
+        <div class="signature__copy">
+          <p class="eyebrow">The Signature Piece</p>
+          <h2 class="signature__title">Bugatti<br><em>Chiron</em></h2>
+          <div class="signature__specs">
+            <div><b>1,500</b><span>Horsepower</span></div>
+            <div><b>2.4s</b><span>0 — 100 km/h</span></div>
+            <div><b>420</b><span>km/h top speed</span></div>
+          </div>
+          <button class="btn btn--gold" data-enquire="Bugatti Chiron" data-magnetic><span>Request Private Viewing</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATELIER -->
+    <section class="atelier" id="atelier">
+      <div class="section-head section-head--center">
+        <p class="eyebrow reveal">The Atelier</p>
+        <h2 class="title reveal">An experience <em>as rare</em><br>as the cars themselves</h2>
+      </div>
+      <div class="pillars">
+        <article class="pillar reveal">
+          <span class="pillar__num">I</span>
+          <h3>Private Viewings</h3>
+          <p>Every automobile shown by appointment in our closed showroom — or brought to your door, anywhere.</p>
+        </article>
+        <article class="pillar reveal" style="--d:.12s">
+          <span class="pillar__num">II</span>
+          <h3>Verified Provenance</h3>
+          <p>Full history, independent inspection and documented ownership chain for every car we place.</p>
+        </article>
+        <article class="pillar reveal" style="--d:.24s">
+          <span class="pillar__num">III</span>
+          <h3>Global Delivery</h3>
+          <p>Enclosed transport, customs and registration handled end to end. You simply receive the keys.</p>
+        </article>
+        <article class="pillar reveal" style="--d:.36s">
+          <span class="pillar__num">IV</span>
+          <h3>Sourcing on Request</h3>
+          <p>Looking for something that isn't listed? Our network finds the cars that never reach the market.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote">
+      <div class="quote__bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=2400&q=80&auto=format&fit=crop" alt="" />
+      </div>
+      <blockquote class="reveal">
+        <p>“The car arrived exactly as promised — and somehow, even better. This is how it should always feel.”</p>
+        <cite>— Private Client, Monaco</cite>
+      </blockquote>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact__intro">
+        <p class="eyebrow reveal">Private Enquiries</p>
+        <h2 class="title reveal">Begin the <em>conversation</em></h2>
+        <p class="contact__lead reveal">Tell us which automobile has your attention. A personal advisor will respond within the hour — discreetly, and never with pressure.</p>
+        <div class="contact__direct reveal">
+          <a href="#" data-wa class="contact__wa">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+            <span><small>Fastest response</small>Chat on WhatsApp</span>
+            <i>→</i>
+          </a>
+          <a href="mailto:hello@carking.cars" class="contact__line"><small>Email</small>hello@carking.cars</a>
+          <div class="contact__line"><small>Showroom</small>By appointment only</div>
+        </div>
+      </div>
+
+      <form class="form reveal" id="form" novalidate>
+        <label class="field"><input name="name" required placeholder=" " autocomplete="name" /><span>Your name</span></label>
+        <label class="field"><input name="phone" required placeholder=" " inputmode="tel" autocomplete="tel" /><span>Phone</span></label>
+        <label class="field field--select">
+          <select name="car" id="carSelect"><option value="">Any automobile</option></select>
+          <span>Automobile of interest</span>
+        </label>
+        <label class="field"><textarea name="message" rows="3" placeholder=" "></textarea><span>Message (optional)</span></label>
+        <button type="submit" class="btn btn--gold btn--wide" data-magnetic><span>Send Enquiry via WhatsApp</span></button>
+        <p class="form__note">Your details are shared only with your personal advisor.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 24 5 9l7 6 4-9 4 9 7-6 2 15Z" fill="currentColor"/><rect x="3" y="26" width="26" height="3" fill="currentColor"/></svg>
+        <p>Private automobiles,<br>placed with discretion.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="#collection">Collection</a>
+        <a href="#signature">Signature</a>
+        <a href="#atelier">Atelier</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <nav class="footer__links">
+        <a href="#" data-wa>WhatsApp</a>
+        <a href="#">Instagram</a>
+        <a href="mailto:hello@carking.cars">Email</a>
+      </nav>
+    </div>
+    <div class="footer__word" aria-hidden="true">CARKING</div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> CarKing Automobiles</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="#" class="wa-float" data-wa aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+  </a>
+
+  <!-- Enquiry modal -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <button class="modal__close" data-close aria-label="Close">✕</button>
+      <div class="modal__media"><img id="modalImg" alt="" /></div>
+      <div class="modal__body">
+        <p class="eyebrow" id="modalBrand">Enquiry</p>
+        <h3 id="modalTitle">Automobile</h3>
+        <p class="modal__lead">Request a private viewing, full specification sheet or availability. We respond within the hour.</p>
+        <form id="modalForm" novalidate>
+          <label class="field"><input name="name" required placeholder=" " autocomplete="name" /><span>Your name</span></label>
+          <label class="field"><input name="phone" required placeholder=" " inputmode="tel" autocomplete="tel" /><span>Phone</span></label>
+          <div class="modal__actions">
+            <button type="submit" class="btn btn--gold"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg><span>Enquire on WhatsApp</span></button>
+            <a class="btn btn--ghost" id="modalMail" href="#"><span>Email instead</span></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.5h-.01a9.43 9.43 0 0 1-4.8-1.32l-.35-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.45-5.02c0-5.2 4.24-9.44 9.46-9.44a9.4 9.4 0 0 1 6.68 2.77 9.38 9.38 0 0 1 2.77 6.68c0 5.21-4.24 9.44-9.45 9.44m8.04-17.48A11.3 11.3 0 0 0 12.05.7C5.78.7.68 5.8.68 12.06c0 2 .52 3.96 1.52 5.68L.58 23.7l6.1-1.6a11.33 11.33 0 0 0 5.37 1.37h.01c6.26 0 11.36-5.1 11.37-11.36 0-3.04-1.18-5.89-3.33-8.04"/></symbol>
+  </svg>
+
+  <script src="main.js"></script>
+</body>
+</html>
