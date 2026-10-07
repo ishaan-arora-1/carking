@@ -305,8 +305,7 @@ const modalForm = $('#modalForm');
 let currentCar = '';
 function openModal(name, brand, img) {
   currentCar = name;
-  $('#modalTitle').textContent = name.replace(brand, '').trim() || name;
-  $('#modalBrand').textContent = brand || 'Enquiry';
+  $('#modalTitle').textContent = name;
   $('#modalImg').src = img;
   $('#modalImg').alt = name;
   $('#modalMail').href = `mailto:${CONFIG.email}?subject=${encodeURIComponent('Enquiry — ' + name)}`;

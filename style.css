@@ -706,3 +706,9 @@ em { font-style: normal; }
 .credits li { margin-bottom: 4px; break-inside: avoid; }
 .credits a { color: var(--text); text-decoration: underline; text-decoration-color: var(--line-2); }
 @media (max-width: 560px) { .credits ul { columns: 1; } }
+
+/* White primary button */
+.btn--white { background: #fff; color: #0b0b0b; }
+.btn--white::before { background: #d6d6d6; }
+.intro__text { margin-top: 0; }
+.modal__body h3 { margin-top: 0; }
